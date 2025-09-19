@@ -58,3 +58,29 @@ array[0.5] = "aaa";
 console.log(array);
 array[-1] = "aaa";
 console.log(array);
+
+//for in 문
+const user = {
+  name: "cho",
+  age: 18,
+  salary: 100,
+  email: "cho@java.com",
+};
+
+for (const key in user) {
+  console.log(key);
+  console.log(user[key]);
+}
+
+console.log("name" in user); //true
+console.log("lunch" in user); //false
+
+//Object --> class
+/* 
+    Object.values
+    Object.keys
+    Object.entries
+ */
+console.log(Object.keys(user)); //[ 'name', 'age', 'salary', 'email' ]
+console.log(Object.values(user)); //[ 'cho', 18, 100, 'cho@java.com' ]
+console.log(Object.entries(user)); //[ [ 'name', 'cho' ], [ 'age', 18 ], [ 'salary', 100 ], [ 'email', 'cho@java.com'] ]
