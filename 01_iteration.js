@@ -38,3 +38,27 @@ for (let i = 0; i < 5; i++) {
     console.log(i, j);
   }
 }
+
+//흐름제어 -> continue, break
+for (let i = 0; i < 10; i++) {
+  //나머지 연산자 -> 나머지가 있으면 0이 아님, 즉 2로 나눴을 때 나머지가 있으면 홀수
+  if (i % 2) {
+    //홀수를 검증하는 방법
+    //홀수인 경우에는 생략
+    continue;
+  }
+  console.log(i);
+}
+
+let result = 1;
+for (let i = 1; i <= 50; i++) {
+  //   if (result >= 1000) {
+  //     break;
+  //   }
+  if (result >= 1000) break; //{} 1줄이면 생략가능.
+
+  result *= i;
+}
+console.log("result =", result);
+
+//무한반복
