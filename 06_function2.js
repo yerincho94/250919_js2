@@ -49,6 +49,6 @@ const add3 = (a, b) => {
 const result3 = add3(18, 30);
 console.log("result3: ", result3);
 
-const add4 = (a, b) => a + b;
+const add4 = (a, b) => a + b; //암시적 표현
 const result4 = add4(18, 30);
 console.log("result4: ", result4);
