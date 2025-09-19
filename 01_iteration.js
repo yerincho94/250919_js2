@@ -27,3 +27,14 @@ console.log("sum = ", sum);
 for (let i = 3; i < 50; i += 3) {
   console.log(i);
 }
+
+// 어? 뭔가 이상하다? i가 왜 재활용할 수 있지?
+// let은 block scope. for () {}, 내부에서는 같은 이름을 쓰는데, 바깥에서는 그걸 모른다!
+
+//중첩 for문
+for (let i = 0; i < 5; i++) {
+  // for (let i = 0; i < 5; i++) { // 같은 이름을 써버리면은 X
+  for (let j = 0; j < 5; j++) {
+    console.log(i, j);
+  }
+}
