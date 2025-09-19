@@ -61,4 +61,8 @@ for (let i = 1; i <= 50; i++) {
 }
 console.log("result =", result);
 
-//무한반복
+//for문 무한반복
+for (;;) {
+  //종료식을 생략하면 무한반복됨
+  break;
+}
